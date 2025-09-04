@@ -9,12 +9,30 @@ body{
   color: black;
 }
 #header {
-    width: 100%;
+  width: 100%;
   height: 100vh;
-  background-image: url(phone-background.png);
-  background-size: cover;
-  background-position: center;
-  
+  background-color: black; /* fallback background */
+  display: flex;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px; /* more space between text and photo */
+}
+
+.header-text {
+  max-width: 45%;
+  color: white;
+}
+
+.header-image img {
+  width: 400px;        /* make it bigger */
+  max-width: 100%;     /* don’t overflow */
+  border-radius: 12px;
+  object-fit: cover;
 }
 .container{
   padding: 10px 10% ;
